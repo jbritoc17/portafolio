@@ -13,3 +13,8 @@ app.get("/",(req,res)=>{
     let index = path.join(__dirname,"./views/index.html")
     res.sendFile(index)
 })
+
+app.get("/aboutMe",(req,res)=>{
+    let about = path.join(__dirname,"./views/aboutMe.html")
+    res.sendFile(about)
+})
